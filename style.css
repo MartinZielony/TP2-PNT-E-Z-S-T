@@ -1,0 +1,186 @@
+/*PALETA 1*/
+
+.color1 {
+    color: #F9FEC9;
+}
+
+.color2 {
+    color: #D3B786;
+}
+
+.color3 {
+    color: #886839;
+}
+
+.color4 {
+    color: #AF672D;
+}
+
+.color5 {
+    color: #E4B455;
+}
+
+/*PALETA 2*/
+
+.color1b {
+    color: #770D15;
+}
+
+.color2b {
+    color: #B4000F;
+}
+
+.color3b {
+    color: #58483A;
+}
+
+.color4b {
+    color: #90A74C;
+}
+
+.color5b {
+    color: #597718;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    padding: 0% 5% 0% 5%;
+    margin: 2% 0 2% 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.lista {
+    list-style: none;
+    padding: 0%;
+    margin: 0;
+}
+
+nav {
+    background-color: #9C8C6C;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.menu {
+    background-color: #D1B788;
+    padding: 3% 3% 0 3%;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 150px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #876839;
+    color: white;
+}
+
+.imagen {
+    width: 15%;
+    border-radius: 10px;
+    margin: 2% 0 2% 1%;
+}
+
+.encabezado {
+    text-align: center;
+    padding: 0.5% 0% 0.5% 0%;
+}
+
+.item {
+    justify-content: space-between;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 0.1px solid white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+hr{
+    color: white;
+    border-style: ridge;
+}
+
+.navItem {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    transition: color 500ms;
+    padding: 3%;
+    border-radius: 13px;
+}
+
+.navItem:hover {
+    color: #876839;
+}
+
+.navItem:focus,
+.navItem:active {
+    transition: none;
+}
+
+footer {
+    background-color: #D2B684;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.seccion {
+    border-radius: 10px;
+}
+
+.precio {
+    margin-right: 20px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.menuForm {
+    background-color: #D1B788;
+    padding: 3% 3% 0 3%;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 150px;
+    width: 50vw;
+}
+
+.formulario {
+    padding-bottom: 5%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    height: 50vw;
+}
+
+.formulario select{
+    width: 25%;
+}
+
+.anchoTexto {
+    width: 25%;
+}
+
+.corto{
+    width: 10%;
+}
+
+i {
+    color: white;
+}

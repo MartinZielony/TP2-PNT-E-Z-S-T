@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Reservas</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <!--ponemos nombre del restaurante-->
+        <h1><svg style="fill:white; width:25px" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M169.7 .9c-22.8-1.6-41.9 14-47.5 34.7L110.4 80c.5 0 1.1 0 1.6 0c176.7 0 320 143.3 320 320c0 .5 0 1.1 0 1.6l44.4-11.8c20.8-5.5 36.3-24.7 34.7-47.5C498.5 159.5 352.5 13.5 169.7 .9zM399.8 410.2c.1-3.4 .2-6.8 .2-10.2c0-159.1-128.9-288-288-288c-3.4 0-6.8 .1-10.2 .2L.5 491.9c-1.5 5.5 .1 11.4 4.1 15.4s9.9 5.6 15.4 4.1L399.8 410.2zM176 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM96 384a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" />
+            </svg> Il Sviluppatore</h1>
+        <h1><a class="navItem" href="index.html">Inicio</a></h1>
+    </nav>
+    <main>
+        <div class="menuForm">
+            <div class="seccion">
+                <div class="encabezado">
+                    <h1>Reservas</h1>
+                </div>
+                <div class="items">
+                    <form class="formulario">
+                        <label for="fname">Nombre:</label>
+                        <input type="text" id="fname" name="fname" placeholder="John">
+
+                        <label for="lname">Apellido:</label>
+                        <input type="text" id="lname" name="lname" placeholder="Doe">
+
+                        <label for="lname">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="john@doe.com.ar">
+
+                        <label for="lname">Teléfono:</label>
+                        <input type="tel" id="email" name="email" placeholder="+54 9 11 11112222">
+
+                        <label for="fecha">Fecha y hora:</label>
+                        <input type="date" id="fechaLlegada" name="fecha" value="Doe">
+
+                        <select>
+                            <option disabled selected>Horarios disponibles</option>
+                            <option>20:00</option>
+                            <option>20:30</option>
+                            <option>21:00</option>
+                            <option>21:30</option>
+                            <option>22:00</option>
+                            <option>22:30</option>
+                            <option>23:00</option>
+                            <option>23:30</option>
+                        </select>
+
+                        <label for="lname">Cantidad de personas:</label>
+                        <input class="corto" type="number" id="cantPersonas" name="cantPersonas" placeholder="4" min="1" max="6">
+
+                        <b for="alergias">Alergias:</b>
+                        <div class="chkAlergias">
+                            <label for="mani">Maníes</label>
+                            <input class="corto" type="checkbox" name="mani" id="a1">
+                            <label for="pescado">Pescado</label>
+                            <input class="corto" type="checkbox" name="pescado" id="a2">
+                            <label for="huevos">Huevos</label>
+                            <input class="corto" type="checkbox" name="huevos" id="a3">
+                        </div>
+
+                        <input type="submit" value="Enviar" class="envio">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

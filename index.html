@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Il Sviluppatore</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <!--ponemos nombre del restaurante-->
+        <h1><svg style="fill:white; width:25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.7 .9c-22.8-1.6-41.9 14-47.5 34.7L110.4 80c.5 0 1.1 0 1.6 0c176.7 0 320 143.3 320 320c0 .5 0 1.1 0 1.6l44.4-11.8c20.8-5.5 36.3-24.7 34.7-47.5C498.5 159.5 352.5 13.5 169.7 .9zM399.8 410.2c.1-3.4 .2-6.8 .2-10.2c0-159.1-128.9-288-288-288c-3.4 0-6.8 .1-10.2 .2L.5 491.9c-1.5 5.5 .1 11.4 4.1 15.4s9.9 5.6 15.4 4.1L399.8 410.2zM176 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm64 128a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM96 384a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg> Il Sviluppatore</h1>
+        <h1><a class="navItem navPizza" href="#pizza">Pizzas</a></h1>
+        <h1><a class="navItem navPasta" href="#pastas">Pastas</a></h1>
+        <h1><a class="navItem navPasta" href="#helados">Helados</a></h1>
+        <h1><a class="navItem" href="reserva.html">Reservas</a></h1>
+    </nav>
+    <main>
+<!--El tag main podría ser de la clase menu-->
+<!--https://www.w3schools.com/html/html5_semantic_elements.asp-->
+        <div class="menu">
+
+            <div class="seccion">
+                <div class="encabezado">
+                    <h1 id="pizza">Pizzas</h1>
+                    <p>La mejor pizza. Estilo Italiano auténtico con los mejores ingredientes.</p>
+                </div>
+                <div class="items">
+                    <ul class="lista">
+                        <li class="item"><img class="imagen"
+                                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                alt="">
+                            <div class="tituloYdescripcion">
+                                <h2>Pizza Mozzarella</h2>
+                                <hr>
+                                <p>Queso muzzarella.</p>
+                            </div>
+                            <h2 class="precio">$799</h2>
+                        </li>
+                        <li class="item"><img class="imagen"
+                                src="https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+                                alt="">
+                            <div class="tituloYdescripcion">
+                                <h2>Pizza Napolitana</h2>
+                                <hr>
+                                <p>Queso muzzarella y tomate</p>
+                            </div>
+                            <h2 class="precio">$999</h3>
+                        </li>
+                        <li class="item"><img class="imagen"
+                                src="https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                alt="">
+                            <div class="tituloYdescripcion">
+                                <h2>Pizza Primavera</h2>
+                                <hr>
+                                <p>Queso muzzarella, jamon, morron y tomate</p>
+                            </div>
+                            <h2 class="precio">$699</h2>
+                        </li>
+                        <li class="item"><img class="imagen"
+                                src="https://images.unsplash.com/photo-1579751626657-72bc17010498?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+                                alt="">
+                            <div class="tituloYdescripcion">
+                                <h2>Pizza Margarita</h2>
+                                <hr>
+                                <p>Queso muzzarella, anana, jamon</p>
+                            </div>
+                            <h2 class="precio">$599</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="seccion">
+                <div class="encabezado">
+                    <h1 id="pastas">Pastas</h1>
+                    <p>Pastas tradicionales estilo Italiano auténtico, Ingredientes Frescos.</p>
+                </div>
+                <div class="items">
+                    <ul class="lista">
+                        <li class="item">
+                            <img class="imagen"
+                                src="https://plus.unsplash.com/premium_photo-1661255412806-68df9e32a54b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                alt="">
+                            <div class="tituloYdescripcion">
+                                <h2>Pasta Carbonara</h2>
+                                <hr>
+                                <p>Son pastas a la carbonara! Qué más hay que decir?</p>
+                            </div>
+                            <h2 class="precio">$799</h3>
+                        </li>
+                        <li class="item">
+                            <img class="imagen"
+                                src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                alt="">
+
+                            <div class="tituloYdescripcion">
+                                <h2>Pasta Alla Griccia</h2>
+                                <hr>
+                                <p>Realmente son Pastas Alla Griccia las de la foto?</p>
+                            </div>
+                            <h2 class="precio">$999</h2>
+                        </li>
+                        <li class="item">
+                            <img class="imagen"
+                                src="https://images.unsplash.com/photo-1579684947550-22e945225d9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                alt="">
+                            <div class="tituloYdescripcion">
+                                <h2>Pasta Puttanesca</h2>
+                                <hr>
+                                <p>Pastas Alla Puttanesca, un clásico.</p>
+                            </div>
+                            <h2 class="precio">$699</h3>
+                        </li>
+                        <li class="item">
+                            <img class="imagen"
+                                src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=932&q=80"
+                                alt="">
+                            <div class="tituloYdescripcion">
+                                <h2>Pasta Al Burro</h2>
+                                <hr>
+                                <p>Pastas Lorem Ipsum, qué se yo.</p>
+                            </div>
+                            <h2 class="precio">$599</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="seccion">
+                <div class="encabezado">
+                    <h1 id="helados">Helados</h1>
+                    <p>Helados artesanales traidos directamente desde Italia.</p>
+                </div>
+                <div class="items">
+                    <ul class="lista">
+                        <li class="item">
+                            <img class="imagen"
+                                src="https://greenpistachio.es/wp-content/uploads/2019/05/receta-helado-pistachos.jpg"
+                                alt="">
+                            <div class="tituloYdescripcion">
+                                <h2>Pistacho</h2>
+                                <hr>
+                                <p>Tradicional helado de pistacho, receta familiar.</p>
+                            </div>
+                            <h2 class="precio">$799</h3>
+                        </li>
+                        <li class="item">
+                            <img class="imagen"
+                                src="http://thermomix-barcelona-sagrada-familia.es/media/Posts/attachments/2009be61de7f9af9bab18d270320e489.jpg"
+                                alt="">
+
+                            <div class="tituloYdescripcion">
+                                <h2>Avellana</h2>
+                                <hr>
+                                <p>Helado artesanal de avellanas.</p>
+                            </div>
+                            <h2 class="precio">$999</h2>
+                        </li>
+                        <li class="item">
+                            <img class="imagen"
+                                src="https://blog.giallozafferano.it/fablesucre/wp-content/uploads/2020/07/Blog_IMG_0178-scaled.jpg"
+                                alt="">
+                            <div class="tituloYdescripcion">
+                                <h2>Cafe</h2>
+                                <hr>
+                                <p>Helado de cafe torrado intenso, con dejos de caramelo.</p>
+                            </div>
+                            <h2 class="precio">$699</h3>
+                        </li>
+                        <li class="item">
+                            <img class="imagen"
+                                src="https://recipes.pregel.co/wp-content/uploads/sites/2/2019/07/Coconut-Gelato.jpg"
+                                alt="">
+                            <div class="tituloYdescripcion">
+                                <h2>Coco</h2>
+                                <hr>
+                                <p>Helado tradicional de coco.</p>
+                            </div>
+                            <h2 class="precio">$599</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+    <footer>
+        <!--redes sociales del restaurante etc etc-->
+        Telefono: 11-2233-4455
+
+        <div class="copyright">
+            ® Copyright 2023 EZST
+        </div>
+
+        <ul class="list-inline">
+            <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://es-la.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/home/"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+    </footer>
+</body>
+    
+</html>
