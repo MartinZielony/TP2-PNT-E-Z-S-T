@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+
+    <script src="reserva.js"></script>
     <title>Reservas</title>
 </head>
 
@@ -30,22 +32,25 @@
                 <div class="encabezado">
                     <h1>Reservas</h1>
                 </div>
+                
                 <div class="items">
                     <form class="formulario">
                         <label for="fname">Nombre:</label>
-                        <input class="anchoTexto" type="text" id="fname" name="fname" placeholder="John">
+                        <input class="anchoTexto" type="text" id="fname" name="fname" placeholder="John" required onkeyup="validarString(this)">
 
                         <label for="lname">Apellido:</label>
-                        <input class="anchoTexto" type="text" id="lname" name="lname" placeholder="Doe">
+                        <input class="anchoTexto" type="text" id="lname" name="lname" placeholder="Doe" required onkeyup="validarString(this)">
 
-                        <label for="lname">Email:</label>
-                        <input class="anchoTexto" type="email" id="email" name="email" placeholder="john@doe.com.ar">
+                        <label for="email">Email:</label>
+                        <input class="anchoTexto" type="email" id="email" name="email" placeholder="john@doe.com.ar" required onchange="validarEmail(this)">
 
-                        <label for="lname">Teléfono:</label>
-                        <input class="anchoTexto" type="tel" id="email" name="email" placeholder="+54 9 11 11112222">
+                        <label for="telefono">Teléfono:</label>
+                        <input class="anchoTexto" type="tel" id="telefono" name="telefono" placeholder="9 11 11112222" required onkeyup="validarTelefono(this)">
 
                         <label for="fecha">Fecha y hora:</label>
-                        <input class="anchoFH" type="date" id="fechaLlegada" name="fecha" value="Doe">
+                        <input class="anchoFH" type="date" id="fechaLlegada" name="fechaLlegada" required>
+                        <!--validar con atributos html campos required-->
+                        <!--Deberian ser requeridos horarios y cantidad de personas-->
 
                         <select>
                             <option disabled selected>Horarios</option>
@@ -59,7 +64,7 @@
                             <option>23:30</option>
                         </select>
 
-                        <label for="lname">Cantidad de personas:</label>
+                        <label for="cantPersonas">Cantidad de personas:</label>
                         <input class="corto" type="number" id="cantPersonas" name="cantPersonas" placeholder="4" min="1" max="6">
 
                         <b for="alergias">Alergias:</b>
