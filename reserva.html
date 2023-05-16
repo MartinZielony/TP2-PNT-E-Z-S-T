@@ -52,7 +52,7 @@
                         <!--validar con atributos html campos required-->
                         <!--Deberian ser requeridos horarios y cantidad de personas-->
 
-                        <select>
+                        <select id="horario">
                             <option disabled selected>Horarios</option>
                             <option>20:00</option>
                             <option>20:30</option>
@@ -70,14 +70,15 @@
                         <b for="alergias">Alergias:</b>
                         <div class="chkAlergias">
                             <label for="mani">Maníes</label>
-                            <input class="corto" type="checkbox" name="mani" id="a1">
+                            <input class="corto" type="checkbox" name="mani" id="a1" value="Maníes">
                             <label for="pescado">Pescado</label>
-                            <input class="corto" type="checkbox" name="pescado" id="a2">
+                            <input class="corto" type="checkbox" name="pescado" id="a2" value="Pescado">
                             <label for="huevos">Huevos</label>
-                            <input class="corto" type="checkbox" name="huevos" id="a3">
+                            <input class="corto" type="checkbox" name="huevos" id="a3" value="Huevos">
                         </div>
 
-                        <input type="submit" value="Enviar" class="envio">
+                        <input type="submit" value="Enviar" class="envio" onclick="mostrarReserva()">
+                        <!--ONSUBMIT-->
                     </form>
                 </div>
             </div>

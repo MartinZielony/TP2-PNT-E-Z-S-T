@@ -50,3 +50,32 @@ function validarEmail(input) {
         input.value;
     }
 }
+
+function mostrarReserva() {
+    // Obtener todos los elementos de checkbox
+    var checkboxes = document.querySelectorAll("input[type='checkbox']");
+
+    // Array para almacenar los elementos marcados
+    var elementosSeleccionados = [];
+
+    // Iterar sobre los checkboxes
+    checkboxes.forEach(function (checkbox) {
+        if (checkbox.checked) {
+            elementosSeleccionados.push(checkbox.value);
+        }
+    });
+
+    var mensaje = "Nombre: " + document.getElementById("fname").value +
+        ", Apellido: " + document.getElementById("lname").value +
+        ", (Mail: " + document.getElementById("email").value + ") \n" +
+        "Teléfono: " + document.getElementById("telefono").value + "\n" +
+        "En la fecha " + document.getElementById("fechaLlegada").value + " a las " +
+        document.getElementById("horario").value + "hs \n" +
+        document.getElementById("cantPersonas").value + " personas. \n";
+
+    if (elementosSeleccionados.length > 0) {
+        mensaje += "Alergias: " + elementosSeleccionados
+    }
+
+    alert(mensaje);
+}
